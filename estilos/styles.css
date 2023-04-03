@@ -102,6 +102,8 @@ button:hover{
     
 }
 
+
+
 .HeaderPrincipal a:hover {
     color: blueviolet;
 }
@@ -119,9 +121,7 @@ button:hover{
     background-position: center center;
 }
 
-#hero h1{
-    color: white;
-}
+
 
 #hero button{
     font-size: 1.75em;
@@ -222,6 +222,7 @@ footer {
 
 #hero h1{
         font-size: 5em;
+        color: white;
     }
 
 #somos-proya .container{
@@ -563,3 +564,65 @@ input[type='submit'] {
     height: 400px;
 
 }
+
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    .HeaderPrincipal .container {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .HeaderPrincipal nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .HeaderPrincipal li {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+  
+    #hero {
+      height: 50vh;
+    }
+    
+    #hero h1 {
+      font-size: 2.5em;
+    }
+    
+    #hero button {
+      font-size: 1.5em;
+    }
+    
+    #somos-proya .container {
+      padding: 100px 12px;
+    }
+    
+    #nuestros-programas .container {
+      padding: 100px 12px;
+    }
+    
+    #nuestros-programas h2 {
+      font-size: 2.5em;
+    }
+    
+    #nuestros-programas p {
+      display: none;
+    }
+    
+    #nuestros-programas .carta {
+      padding: 30px 0px;
+      margin: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Styles for screens smaller than 480px */
+    .HeaderPrincipal .logo {
+      font-size: 1.2em;
+    }
+  
+    .HeaderPrincipal li {
+      font-size: 1em;
+    }
+  }
