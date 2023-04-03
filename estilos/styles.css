@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: rgb(98, 70, 158);
+    max-width: 100%;
+}
+
+h1{ 
+    font-size: 3.5em;
+}
+
+h2{ 
+    font-size: 2.7em;
+}
+
+h3{ 
+    font-size: 2em;
+}
+
+p{ 
+    font-size: 1.25em;
+}
+
+ul{ 
+    list-style: none;
+}
+
+li{
+     font-size: 1.25em;
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+    margin-top: 40px;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+
+.color-digitalnahue{ 
+    color:rgb(0, 0, 0); 
+}
+
+.HeaderPrincipal{
+    background-color: rgb(245,245,245);
+    width: 100%;
+}
+
+.HeaderPrincipal .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+.HeaderPrincipal .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.HeaderPrincipal nav {
+    display: flex;
+    text-align: center;
+    padding: 25px 30px;
+}
+
+.HeaderPrincipal li {
+    padding: 5px 12px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    align-items: flex-end;
+    display: inline;
+    
+}
+
+.HeaderPrincipal a:hover {
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: url("../multimedia/Fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    background: rgb(14,11,74);
+    background: linear-gradient(180deg, rgba(14,11,74,1) 0%, rgba(190,35,188,1) 51%, rgba(30,147,203,1) 100%);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 150px 12px;
+    
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p{
+    display: none;
+    margin-top: 40px;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+
+
+/*  Estilos Del Footer */
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    text-align: end;
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+
+/* Fin Estilos de Footer */
+
+
+.Headercontainer {
+    position: fixed;
+    width: 100%;
+}
+
+.HeaderPrincipal {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+#hero h1{
+        font-size: 5em;
+    }
+
+#somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+#somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+}
+
+#somos-proya h2{
+        margin-top: 0px;
+}
+
+#somos-proya .img-container{
+        background-image: url("../multimedia/QuienesSomos.png");
+        background-size: cover;
+        background-position: center center;
+        box-shadow: 10px 0 40px;
+        height: 500px;
+        width: 400px; 
+        max-width: 100%;
+    }
+
+#nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+#nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+#nuestros-programas h2{
+        font-size: 4em;
+ }
+
+#nuestros-programas h3{
+        margin-top: 0;
+}
+
+#nuestros-programas .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../multimedia/Carta1.jpg");
+
+}
+
+.carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../multimedia/Carta2.jpg");
+}
+
+.carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../multimedia/Carta3.jpg");
+    
+}
+
+#final h2{
+        font-size: 5em;
+}
+
+#final button{
+        font-size: 2em;
+}
+
+footer .container{
+        justify-content: flex-end;
+}
+
+
+
+.OtrosCursos{
+    color: #000;
+    text-shadow: 21px 13px 5px grey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    margin-bottom: 100px;
+    background-color: #e6e6e6 ;
+    padding: 100px;
+    
+}
+
+.Contenedor-Cajas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 35px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(190,35,188,1) 35%, rgba(0,174,255,1) 100%);
+    border-radius: 20px;
+    box-shadow: 16px 10px 4px 7px rgba(0,0,0,0.5);
+
+   
+}
+
+.Caja {
+    margin: 30px;
+
+}
+
+
+.Caja img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 21px 17px 0px 5px  rgb(94 10 130);
+    border-radius: 5px;
+    
+}
+
+.Contenedor-Cajas .Caja-Texto  {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+}
+
+.Contenedor-Cajas .Caja-Texto h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.Contenedor-Cajas .Caja-Texto p {
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration:solid
+}
+
+.Contenedor-Cajas .Caja-Texto button {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+/* PREGUNTAS FRECUENTES  */
+
+.Contenedor-Preguntas {
+    background-color: rgb(98, 70, 158);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    
+}
+
+.Contenedor-Titulo {
+    background: rgb(229,0,255);
+    background: linear-gradient(90deg, rgba(229,0,255,0.7693452380952381) 0%, rgba(0,226,255,1) 50%, rgba(255,0,251,0.7805497198879552) 100%);
+    color: black;
+    margin-top: 15px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.Contenedor-Titulo p {
+    color:white;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: start;
+    font-weight: 900;
+    
+}
+
+.Formulario-Span {
+    color: violet;
+}
+
+.Contenedor-Preguntas .Preguntas h2 {
+    color: #ffffff;
+    background-color: #000000;
+    text-shadow: 10px 10px 20px #000;
+    text-align: center;
+    align-items: center;
+    margin: 60px;
+    padding: 30px;
+    border-radius: 10px ;
+    border-style: solid;
+}
+
+.Contenedor-Preguntas .Preguntas p {
+    font-size: 28px;
+    text-align: left;
+    background: rgb(195,34,34);
+    background: linear-gradient(32deg, rgba(195,34,34,1) 0%, rgba(113,45,253,1) 100%);
+    margin-top: 15px;
+    padding: 35px;
+
+    box-shadow: 10px 20px 0px black;
+    border-style:groove;
+}
+
+.Encabezado-Form h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgb(121,0,255);
+    background: linear-gradient(90deg, rgba(121,0,255,1) 0%, rgba(190,0,255,1) 50%, rgba(121,0,255,1) 100%);
+}
+
+.Encabezado-Form div p {
+    font-size: 20px;
+    background-color: rgb(30 30 30);
+    color: rgba(255, 255, 255, 0.76);
+    padding: 30px;
+
+}
+
+/* FORMULARIO ESTILO */
+
+.Form-Contact {
+    background-color: white;
+    width: 400px;
+    position: relative;
+    margin-top: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37px black;
+}
+
+.Form-Contact header {
+    width: 100%;
+    background-color: rgb(30,30,30);
+    overflow: hidden;
+    color: white;
+}
+
+.Form-Contact header span {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+
+.Contact {
+    padding: .8rem;
+    overflow: hidden;
+    color: gray;
+}
+
+.Contact label, .Contact input, .Contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.Contact label {
+    font-weight: 700;
+}
+
+.Contact input:not([type='submit']), .Contact textarea {
+    border: none;
+    border-bottom: 2px solid rgb(30,30,30);
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+}
+
+.Contact textarea {
+    min-height: 100px;
+}
+
+input[type='submit'] {
+    padding: 10px;
+    border: none;
+    background-color: rgb(30,30,30);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+/* FIN ESTILOS FORMULARIO */
+
+
+/* ESTILO NAV LOGIN-REGISTRO */
+
+#Container-Log-Reg {
+    background-color: #000;
+    display: flex;
+    align-items: start;
+}
+
+#Container-LogReg nav {
+    font-size: 50px;
+   
+}
+
+
+.Caja-Prueba {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+
+}
