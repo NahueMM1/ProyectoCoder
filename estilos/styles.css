@@ -76,6 +76,19 @@ button:hover{
     background: -moz-radial-gradient(circle, #26234e, #1f1a3f, #0e0c29);
 }
 
+.Li-Login {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    align-items: flex-end;
+    display: inline;
+    background-color: rgb(255, 153, 0); 
+    border-radius: 14px;
+    padding: 14px;
+}
+
+
 .HeaderPrincipal .logo{
     height: 160px;
     margin-left: 10px;
@@ -105,12 +118,11 @@ button:hover{
 }
 
 .HeaderPrincipal nav {
-    display: flex;
     text-align: center;
     padding: 20px 30px;
 }
 
-.HeaderPrincipal li {
+.HeaderPrincipal .Principal-Li {
     font-size: 15px;
     text-decoration: none;
     font-weight: bold;
@@ -221,6 +233,7 @@ button:hover{
 
 footer{
     background-color: rgb(230,230,230);
+
 }
 
 footer p{
@@ -428,12 +441,19 @@ footer .container{
 }
 
 .Contenedor-Titulo {
-    background: rgb(229,0,255);
-    background: linear-gradient(90deg, rgba(229,0,255,0.7693452380952381) 0%, rgba(0,226,255,1) 50%, rgba(255,0,251,0.7805497198879552) 100%);
+    background: rgb(48, 28, 85);
     color: black;
     margin-top: 15px;
     text-align: center;
     padding-bottom: 40px;
+}
+
+.Contenedor-Titulo h1 {
+    font-size: 5em;
+    color: #fff;
+    padding-top: 10px;
+    font-family: 'Anton';
+    letter-spacing: 0.2em;
 }
 
 .Contenedor-Titulo p {
@@ -458,6 +478,10 @@ footer .container{
     text-align: center;
     gap: 15px;
     padding: 30px;
+    margin-bottom: 30px;
+    margin-top: 18px;
+    margin-left: 18px;
+    margin-right: 18px;
     border-radius: 10px;
     border-style: solid;
     border-color: black;
@@ -468,7 +492,6 @@ footer .container{
 
 .Contenedor-Preguntas .Preguntas h2 {
     color: #ffffff;
-    background-color: #000000;
     text-shadow: 10px 10px 20px #000;
     text-align: center;
     margin: 0;
@@ -617,6 +640,7 @@ input[type='submit'] {
 
 .Image-Login-Container {
     width: 50%;
+    object-fit: cover;
 }
 
 .Titulo {
@@ -718,6 +742,76 @@ input[type='submit'] {
     cursor: pointer;
 }
 
+/* STAFF ESTILOS */
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-image: url(../multimedia/Logo-staff.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.circle-subtitle {
+    font-size: 40px;
+    color: #000000;
+    margin-top: 10px;
+    font-family: 'Anton';
+    letter-spacing: 1.8px;
+}
+
+.Img-Staff{
+   box-shadow: 10px 10px 10px;
+   color: #7700ff;
+}
+
+
+
+
+.Unete {
+    font-size: 25px;
+    color:#ffffff;
+    font-family: 'Anton';
+    letter-spacing: 2.5px;
+    text-shadow: 10px 7px 10px #7700ff;
+
+}
+
+.Unete strong {
+    color: #000000;
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-decoration:underline;
+
+}
+
+.Boton-Staff  {
+    background-color: #000000;
+    
+}
+
+.Caja-Boton-Staff {
+    margin-bottom: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES , SIEMPRE SE DEJAN AL FINAL */
 
 @media (max-width: 768px) {
 
