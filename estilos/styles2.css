@@ -115,6 +115,7 @@ button:hover{
 
 .HeaderPrincipal .Nav-Titulo {
     color: rgb(255, 255, 255);
+    font-size: 40px;
     font-family: 'Anton';
     letter-spacing: 0.5em;
     text-shadow:10px 15px 15px black;
@@ -193,15 +194,14 @@ button:hover{
 
 #nuestros-programas h2{
     margin-top: 0;
-    font-size: 4em;
+    font-size: 3.2em;
 }
 
 #nuestros-programas p{
     border-radius: 10px;
     background-color: #8c00ff;
+    display: none;
     margin-top: 40px;
-    display: block;
-    margin-bottom: 30px;
 }
 
 #nuestros-programas .carta{
@@ -229,21 +229,18 @@ button:hover{
 }
 
 #final h2{
-    font-size: 5em;    
+    font-size: 9vw;
 }
 
 #final button{
-    font-size: 2em;
+    font-size: 5vw;
 }
 
 /*  Estilos Del Footer */
 
 footer{
     background-color: rgb(230,230,230);
-    height: 150px;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
+
 }
 
 footer p{
@@ -253,14 +250,21 @@ footer p{
     color: rgb(100,100,100);
 }
 
+footer {
+    height: 150px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
 
 /* Fin Estilos de Footer */
+
 
 #hero h1{
         font-size: 5em;
         color: white;
     }
-
 
 
 #somos-proya .texto{
@@ -293,7 +297,14 @@ footer p{
         justify-content: center;
     }
 
+#nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
 
+#nuestros-programas h2{
+        font-size: 4em;
+ }
 
 #nuestros-programas h3{
         margin-top: 0;
@@ -328,6 +339,18 @@ footer p{
         )
         ,url("../multimedia/Logo-Otros.jpg");
     
+}
+
+#final h2{
+        font-size: 5em;
+}
+
+#final button{
+        font-size: 2em;
+}
+
+footer .container{
+        justify-content: flex-end;
 }
 
 .OtrosCursos{
@@ -375,6 +398,7 @@ footer p{
     width: 50%;
     max-width: 600px;
     text-align: initial;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -502,7 +526,18 @@ footer p{
     font-family: 'Open Sans', sans-serif;
   }
 
-
+  @media only screen and (max-width: 600px) {
+    .Encabezado-Form h1 {
+      font-size: 40px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  
+    .Encabezado-Form div p {
+      font-size: 16px;
+      padding: 20px;
+    }
+}
 /* FORMULARIO ESTILO */
 
 .Form-Contact {
@@ -707,6 +742,15 @@ input[type='submit'] {
 
 /* STAFF ESTILOS */
 
+.circle {
+    width: 200px;
+    height: 200px;
+    background-image: url(../multimedia/Logo-staff.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
 .circle-subtitle {
     font-size: 40px;
     color: #000000;
@@ -718,13 +762,9 @@ input[type='submit'] {
 .Img-Staff{
    box-shadow: 10px 10px 10px;
    color: #7700ff;
-   width: 200px;
-    height: 200px;
-    background-image: url(../multimedia/Logo-staff.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
+
+
 
 
 .Unete {
@@ -748,11 +788,6 @@ input[type='submit'] {
 .Boton-Staff  {
     background-color: #000000;
     
-    
-}
-
-.Boton-Staff:hover {
-    border: 2px #8c00ff;
 }
 
 .Caja-Boton-Staff {
@@ -807,6 +842,9 @@ input[type='submit'] {
     
     #somos-proya .container {
       padding: 100px 12px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
     
     #nuestros-programas .container {
@@ -847,12 +885,6 @@ input[type='submit'] {
         margin: 10px;
         padding: 0;
     }
-
-    #somos-proya .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
     
     #somos-proya .texto {
         width: 90%;
@@ -884,6 +916,10 @@ input[type='submit'] {
     
       #final button {
         font-size: 2em;
+      }
+    
+      footer .container {
+        justify-content: flex-end;
       }
     
       .OtrosCursos {
@@ -993,15 +1029,10 @@ input[type='submit'] {
       .Login-Info-Container{
         width: 100%;
       }
-
-      .Nav-Titulo{
-        font-size: 1.2em;
-      }
-
   }
 
   @media (max-width: 480px) {
-    /* ESTILOS PARA 480px */
+    /* Styles for screens smaller than 480px */
     .HeaderPrincipal .logo {
       font-size: 1.2em;
     }
@@ -1010,6 +1041,17 @@ input[type='submit'] {
       font-size: 1em;
     }
   }
+
+  .HeaderPrincipal .Nav-Titulo {
+    color: rgb(255, 255, 255);
+    font-size: 29px;
+    font-family: 'Anton';
+    letter-spacing: 0.5em;
+    text-shadow:10px 15px 15px black;
+    
+}
+
+
   @media (max-width: 767px) {
 
     .Contenedor-Titulo p {
@@ -1041,17 +1083,4 @@ input[type='submit'] {
     }
   }
 
-  @media only screen and (max-width: 600px) {
-    .Encabezado-Form h1 {
-      font-size: 40px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
   
-    .Encabezado-Form div p {
-      font-size: 16px;
-      padding: 20px;
-    }
-}
-  
-
