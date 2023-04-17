@@ -12,6 +12,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background: rgb(98, 70, 158);
     max-width: 100%;
+    min-height: 100vh;
 }
 
 h1{ 
@@ -761,7 +762,7 @@ footer{
 }
 
 .Caja-Boton-Staff {
-    margin-bottom: 20%;
+    margin-bottom: 30%;
 
     .Boton-Staff  {
         background-color: #000000;
@@ -774,7 +775,7 @@ footer{
 
 /* MEDIA QUERIES , SIEMPRE SE DEJAN AL FINAL */
 
-@media (max-width: 768px) {
+@media (max-width: 1027px) {
 
     .HeaderPrincipal .container {
       flex-direction: column;
@@ -856,6 +857,7 @@ footer{
         width: 90%;
         padding-left: 0;
         margin-bottom: 30px;
+        text-align: center;
     }
     
     #somos-proya .img-container {
@@ -887,7 +889,8 @@ footer{
       .OtrosCursos {
         margin-top: 0%;
         margin-bottom: 100px;
-        padding: 100px;
+        padding: 20px;
+        text-align: center;
       }
     
       
@@ -995,6 +998,14 @@ footer{
       .Nav-Titulo{
         font-size: 1.2em;
       }
+
+      .Form-Contact{
+        margin-top: 130%;
+      }
+
+      .Form-Contact span img {
+        width: 250px;
+      }
   }
 
   @media (max-width: 480px) {
@@ -1048,5 +1059,6 @@ footer{
     .Encabezado-Form div p {
       font-size: 16px;
       padding: 20px;
+      text-align: center;
     }
 }

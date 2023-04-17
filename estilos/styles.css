@@ -582,6 +582,7 @@ input[type='submit'] {
 }
 
 .Login-Container {
+    
     height: 43.75em;
     width: 60em;
     margin: 6em auto;
@@ -889,7 +890,8 @@ input[type='submit'] {
       .OtrosCursos {
         margin-top: 0%;
         margin-bottom: 100px;
-        padding: 100px;
+        padding: 20px;
+        text-align: center;
       }
     
       
