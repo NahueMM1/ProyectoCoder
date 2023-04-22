@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import 'reset' ;
 
 html{
     scroll-behavior: smooth;
@@ -104,10 +100,7 @@ button:hover{
 
     .container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
+        @include container-centrado();
         background-color: #3F4045;
 
         .logo{
@@ -771,6 +764,17 @@ footer{
         }
     }
 }
+
+
+@mixin container-centrado {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
 
 
 /* MEDIA QUERIES , SIEMPRE SE DEJAN AL FINAL */
